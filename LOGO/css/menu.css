@@ -1,0 +1,297 @@
+body.lock {
+    overflow: hidden;
+}
+
+p.address {
+    margin: 0 0 0 43px;
+    display: inline-block;
+    position: relative;
+}
+
+.none {
+    display: none !important;
+}
+
+header.headnav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 40;
+}
+
+header.headnav div.blocknav {
+    height: 67px;
+    width: 100%;
+}
+
+div.blocknav::after {
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 67px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 50;
+}
+
+div.blocknav div.container-md {
+    height: 100%;
+}
+
+div.navheader {
+    position: relative;
+    z-index: 52;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+p.address::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background: url(../img/svg/locate.svg) no-repeat center;
+    width: 13px;
+    height: 18px;
+}
+
+h6.Whatsapp::before {
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: -4px;
+    background: url(../img/svg/Whatsapp.svg) no-repeat center;
+    width: 28px;
+    height: 28px;
+}
+
+h6.Whatsapp {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0em;
+    margin-bottom: 0;
+}
+
+.formbtn {
+    background: #0DBC91;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    padding: 11px 24px;
+    margin: 0 0 0 35px;
+}
+
+.formbtn:hover {
+    background: #0a8163;
+}
+
+.formbtn:active {
+    background: #24caa1;
+    color: #e4e4e4;
+}
+
+div.navigation {
+    width: 100%;
+    height: 43px;
+    position: fixed;
+    transition: all 0.3s ease 0s;
+
+}
+
+div.navigation div.container-md {
+    display: block;
+    height: 100%;
+}
+
+nav.navigation {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+div.navigation::before {
+    content: '';
+    position: absolute;
+    background-color: #1fa180;
+    width: 100%;
+    height: 100%;
+}
+
+ul.nav li a {
+    margin: 0;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+
+}
+
+ul.nav li a:hover {
+    color: #b9b9b9;
+}
+
+nav.navigation ul.nav {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    div.navheader img {
+        width: 62px;
+    }
+
+    h6.Whatsapp::before {
+        content: none;
+    }
+
+    p.address span {
+        display: none;
+    }
+
+    h6.Whatsapp {
+        font-weight: 700;
+        margin: 0;
+        margin-left: auto;
+        margin-right: 0em;
+    }
+
+    header.headnav.active {
+        height: 100%;
+    }
+
+    h6.Whatsapp::after {
+        content: "Ростов-на-Дону";
+        color: #364844;
+        size: 13px;
+        display: block;
+        position: relative;
+        font-weight: 400;
+        text-align: right;
+    }
+
+    p.address {
+        display: none;
+    }
+
+    p.address::after {
+        content: none;
+    }
+
+    div.navheader button.formbtn,
+    nav.navigation button.formbtn {
+        display: none;
+    }
+
+    header.headnav div.container-md {
+        height: 64px;
+    }
+
+    div.navigation.active {
+        top: 67px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+        background-color: #1fa180e3;
+        position: absolute;
+    }
+
+    div.navigation {
+        top: -100%;
+        height: 100%;
+    }
+
+    div.navigation::before {
+        content: none;
+    }
+
+    div.nav_burger::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #1FA181;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+    }
+
+    div.nav_burger {
+        width: 37px;
+        height: 24px;
+        position: relative;
+        margin: 0 43px 0 0;
+    }
+
+    div.nav_burger::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #1FA181;
+        position: absolute;
+        margin-top: 20px;
+        transition: all 0.3s ease 0s;
+    }
+
+    div.nav_burger.active::before {
+        transform: rotate(-45deg);
+        margin: 0;
+        top: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+    div.nav_burger.active::after {
+        transform: rotate(45deg);
+        margin: 0;
+        top: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+    div.nav_burger.active span {
+        display: none;
+    }
+
+    div.nav_burger span {
+        width: 100%;
+        height: 4px;
+        background-color: #1FA181;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    ul.nav {
+        display: block;
+    }
+
+    ul.nav li {
+        margin-bottom: 10px;
+    }
+
+    div.navigation div.container-md {
+        padding: 0;
+        display: block;
+        height: auto;
+    }
+
+    ul.nav li:last-child {
+        margin-bottom: 40px;
+    }
+
+    nav.navigation {
+        padding: 48px 19px;
+        display: block;
+    }
+
+    nav.navigation button.formbtn {
+        background-color: white;
+        color: #1FA181;
+        display: block;
+        font-size: 14px;
+        padding: 11px 24px;
+        margin: 0 0 45px 0;
+    }
+
+    .content-1 {
+        margin-top: 67px !important;
+    }
+}

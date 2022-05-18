@@ -1,0 +1,337 @@
+.m-top {
+    margin-top: 15px;
+}
+
+.content-1 {
+    padding: 144px 0 162px 0;
+    margin-top: 110px;
+}
+
+div.background-f::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #F8FBFA;
+    z-index: -5;
+}
+
+div.background-f {
+    position: relative;
+}
+
+div.background-f::before {
+    content: '';
+    top: 0;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url(../img/jpg/Rectangle\ 9.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+div.slider {
+    position: relative;
+    height: 700px;
+    padding: 100px 0 50px 0;
+}
+
+div.slider div.carousel {
+    width: 692px;
+    height: 100%;
+    float: right;
+    margin-left: auto;
+    top: 0;
+}
+
+
+
+div.heder-slider {
+    border-bottom: 440px solid #E2F0EF;
+    border-left: 0px solid transparent;
+    border-right: 110px solid transparent;
+    z-index: 5;
+    height: 0;
+    width: 54.5%;
+    position: absolute;
+}
+
+button.carousel-control-prev {
+    left: 38%;
+    width: 5%;
+}
+
+button.carousel-control-prev span.carousel-control-prev-icon {
+    background-image: url(../img/svg/stik.svg);
+}
+
+button.carousel-control-next {
+    right: 38%;
+    width: 5%;
+}
+
+button.carousel-control-next span.carousel-control-next-icon {
+    background-image: url(../img/svg/stik.svg);
+    transform: rotate(180deg);
+}
+
+div.carusel-indicators {
+    position: absolute;
+    top: 82%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.carusel-indicators h6 {
+    color: #cfcfcf;
+}
+
+div.carusel-indicators h6#current.active {
+    display: block;
+}
+
+div.carusel-indicators h6#current {
+    color: black;
+    display: none;
+}
+
+div.content {
+    padding: 63px 0 56px 53px;
+}
+
+div.content ul {
+    padding-left: 16px;
+}
+
+div.content ul li {
+    color: #1FA181;
+}
+
+div.content ul li span {
+    color: black;
+}
+
+div.content h5 span {
+    color: #868686;
+    font-size: 16px;
+}
+
+div.content h5 {
+    margin: 33px 0 26px 0;
+}
+
+div.content button.formbtn {
+    padding: 11px 60px;
+    margin: 0;
+}
+
+div.content button.formbtn.invert {
+    border: 1px solid #0DBC91;
+    background-color: transparent;
+    display: inline-block;
+    color: #0DBC91;
+    margin-left: 15px;
+}
+
+div.content button.formbtn.invert:hover {
+    border: 1px solid #13886b;
+    color: #89bdb0;
+}
+
+div.content button.formbtn.invert:active {
+    border: 1px solid #14a07d;
+    color: #ffffff;
+}
+
+div.row.footer {
+    height: 144px;
+    align-items: center;
+}
+
+footer {
+    background: #08664F;
+}
+
+ul.nav.footer {
+    justify-content: center;
+}
+
+a.social {
+    margin-right: 15px;
+}
+
+a.social:last-child {
+    margin: 0;
+}
+
+a.social:hover {
+    filter: opacity(0.7);
+}
+
+@media (max-width:1200px) {
+
+    div.content button.formbtn {
+        padding: 11px 40px;
+    }
+}
+
+@media (max-width:1000px) {
+    div.content {
+        padding: 15px 0 15px 20px;
+    }
+
+    div.content button.formbtn.invert {
+        margin: 15px 0 0 0;
+    }
+
+    div.row.footer {
+        height: 220px;
+    }
+
+    ul.nav.footer {
+        display: block;
+    }
+
+    ul.nav.footer li:last-child {
+        margin: 0;
+    }
+}
+
+@media(max-width:991px) {
+    div.background-f::before {
+        width: 100%;
+        left: 0;
+        height: 70%;
+    }
+
+    div.background-f::after {
+        width: 100%;
+        top: 50%;
+        height: 30%;
+    }
+
+    .content-1 {
+        padding: 390px 0 176px 0;
+    }
+}
+
+@media(max-width:720px) {
+    div.slider div.carousel {
+        width: 392px;
+    }
+
+    div.heder-slider {
+        width: 61%;
+        border-right: 98px solid transparent;
+    }
+
+    div.slider {
+        position: relative;
+        height: 640px;
+        padding: 100px 0 50px 0;
+    }
+
+    div.carusel-indicators {
+        top: 88%;
+    }
+
+}
+
+@media(max-width:566px) {
+    div.content button.formbtn {
+        position: absolute;
+    }
+
+    div.content button.formbtn.invert {
+        margin: 0;
+        position: absolute;
+        left: 150px;
+    }
+
+    div.content button.formbtn {
+        padding: 8px 20px;
+    }
+
+    ul.nav.footer li {
+        text-align: right;
+    }
+
+    ul.nav.footer li a {
+        margin-right: 0;
+    }
+
+    div.row.footer {
+        height: 240px;
+    }
+
+    div#social {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    a.social {
+        margin-bottom: 10px;
+    }
+
+    .content-1 {
+        padding: 144px 0 162px 0;
+    }
+
+    div.background-f::before {
+        width: 100%;
+        left: 0;
+        height: 70%;
+    }
+
+    div.background-f::after {
+        width: 100%;
+        top: 50%;
+        height: 30%;
+    }
+
+    .content-1 {
+        padding: 390px 0 176px 0;
+    }
+}
+
+@media(max-width:500px) {
+    div.heder-slider {
+        position: static;
+        width: 100%;
+        border: 0;
+        height: 370px;
+    }
+
+    div.slider div.carousel {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    div.carusel-indicators {
+        top: 146%;
+    }
+
+    div.background-f::before {
+        width: 100%;
+        left: 0;
+        height: 50%;
+    }
+
+    div.background-f::after {
+        width: 100%;
+        top: 50%;
+        height: 50%;
+    }
+
+    .content-1 {
+        padding: 290px 0 20px 0;
+    }
+}
